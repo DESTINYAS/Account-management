@@ -1,0 +1,41 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    env_file:
+      - .docker.env  # Reference the PostgreSQL environment file
+    # ports:
+    #   - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mongodb:
+    image: mongo
+    env_file:
+      - .docker.env  # Reference the MongoDB environment file
+    # ports:
+    #   - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile  # Reference your Dockerfile
+    ports:
+      - "3000:3000"
+    env_file:
+      - .docker.env  # Reference your application environment file
+    depends_on:
+      - postgres
+      - mongodb
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  mongodb_data:
