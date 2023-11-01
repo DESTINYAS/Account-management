@@ -14,5 +14,5 @@ Installation and Usage
 Note
 (1) The hosted application swagger url(on AWS) can be reached on http://16.171.113.129/api/#/
 (2) The site was designed with Nodejs and Express so you must have nodejs installed to run it.
-(4) To run the docker file cd into the docker folder, then into docker-compose folder. Use the command docker-compose up and this will connect to the databases ie mongodb and postgresdb.
+(4) To run the docker file cd into the docker folder, then into docker-compose folder. Use the command docker-compose up and this will connect to the databases ie mongodb and postgresdb. Create a .docker.env file and fill it with the information as indicated in the .docker.env.copy file before running the docker-compose command
 (5) You must have docker install on your system or you can use online version to be able to run the docker
