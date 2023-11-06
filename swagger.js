@@ -9,7 +9,7 @@ const options = {
       description: 'API for managing user accounts',
     },
   },
-  apis: ['./routes/*.js'], // Replace with the actual path to your route files
+  apis: ['./routes/*.js'],
 };
 
 const swaggerSpec = swaggerJSDoc(options);

@@ -21,12 +21,6 @@ const accountSchema = new mongoose.Schema({
   },
 });
 
-// accountSchema.pre('save', async function (next) {
-//     this.accountNumber = generateUniqueAccountNumber();
-//     next();
-//   });
-  
-
 const Account = mongoose.model('Account', accountSchema);
 
 module.exports = Account;
