@@ -59,8 +59,8 @@ router.post('/accounts', postAccountController.createAccountAndSync);
  *           application/json:
  *             example:
  *               - id: 1
- *                 firstName: John
- *                 lastName: Doe
+ *                 firstName: string
+ *                 lastName: string
  *                 accountNumber: 1234567890
  *                 accountType: Savings
  */
