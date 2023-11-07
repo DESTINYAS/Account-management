@@ -26,7 +26,5 @@ jobs:
     - run: npm install
     - run: npm test
     - run: |
-        ls -la
-        touch .env
         echo "${{ secrets.PROD_ENV_FILE }}" > .env
         - run: pm2 restart app
