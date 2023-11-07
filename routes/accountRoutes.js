@@ -7,7 +7,7 @@ const postAccountController = require('../controllers/postAccounts');
  * @swagger
  * tags:
  *   name: Accounts
- *   description: API for managing user accounts
+ *   description: API for creating and managing user accounts
  */
 
 /**
