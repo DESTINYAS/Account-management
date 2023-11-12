@@ -4,6 +4,7 @@ const app = express();
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swagger');
 require('dotenv').config();
+require('newrelic');
 
 app.use('/api', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
@@ -19,6 +20,13 @@ app.use(bodyParser.json());
 
 app.use(routes); // Assuming your account-related routes are under /api
 
+app.use((error, req, res, next) => {
+  console.log(error);
+  const status = error.statusCode || 500;
+  const message = error.message;
+  const data = error.data;
+  res.status(status).json({ message: message, data: data });
+});
 
 const port = process.env.PORT || 3000;
 

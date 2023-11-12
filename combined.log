@@ -1,0 +1,14 @@
+{"level":"info","message":"Received request to get all accounts","timestamp":"2023-11-12T17:52:36.729Z"}
+Sun Nov 12 2023 18:56:55 GMT+0100 (West Africa Standard Time) [INFO] - Received request to get all accounts 
+Sun Nov 12 2023 19:01:04 GMT+0100 (West Africa Standard Time) [INFO] - Received request to get all accounts 
+Sun Nov 12 2023 19:02:28 GMT+0100 (West Africa Standard Time) [INFO] - Received request to get account by ID: 
+Sun Nov 12 2023 19:03:58 GMT+0100 (West Africa Standard Time) [INFO] - Received request to get account by ID: 
+Sun Nov 12 2023 19:03:58 GMT+0100 (West Africa Standard Time) [ERROR] - Error fetching account by ID: {"error":"Cast to ObjectId failed for value \"6541ccdd6e1c43dff420a9e\" (type string) at path \"_id\" for model \"Account\""}
+Sun Nov 12 2023 19:10:52 GMT+0100 (West Africa Standard Time) [INFO] - Received request to create account: {"body":{"firstName":"","lastName":"string","middleName":"string","accountType":"string"}}
+Sun Nov 12 2023 19:10:52 GMT+0100 (West Africa Standard Time) [ERROR] - Validation error: {"error":"\"firstName\" is not allowed to be empty"}
+Sun Nov 12 2023 21:36:33 GMT+0100 (West Africa Standard Time) [INFO] - Received request to get all accounts 
+Sun Nov 12 2023 21:37:42 GMT+0100 (West Africa Standard Time) [INFO] - Received request to create account: {"body":{"firstName":"Rooney","lastName":"Ronaldo","middleName":"Nani","accountType":"Savings"}}
+Sun Nov 12 2023 21:38:26 GMT+0100 (West Africa Standard Time) [INFO] - Received request to create account: {"body":{"firstName":"Erling","lastName":"Haland","middleName":"Mancity","accountType":"Current"}}
+Sun Nov 12 2023 21:38:56 GMT+0100 (West Africa Standard Time) [INFO] - Received request to get all accounts 
+Sun Nov 12 2023 21:39:27 GMT+0100 (West Africa Standard Time) [INFO] - Received request to get account by ID: 
+Sun Nov 12 2023 21:51:31 GMT+0100 (West Africa Standard Time) [INFO] - Received request to get all accounts 
